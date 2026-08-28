@@ -101,3 +101,39 @@ Estimated Waiting Time
    |
    v
 Service Completed
+##2. Author
+
+### Divakar
+
+Computer Science Student | Python Developer | Data Analytics & AI/ML Enthusiast
+
+I build practical software and data-driven projects focused on solving real-world problems.
+
+**GitHub:** https://github.com/Divakar10-ai
+### 3. Analytics Module
+
+Provides queue statistics, service-wise analysis, waiting-time information, and data visualization to help understand campus queue activity and service performance.
+
+### 4. Reports Module
+
+Provides queue reports, data exports, service performance information, and historical queue activity for administrators.
+
+### 5. Prediction Module
+
+Used for queue and waiting-time related calculations to provide students with an estimated waiting time.
+
+---
+
+## Database
+
+The application uses **SQLite** for local data storage. The system maintains information related to students, administrators, queue tokens, services, queue status, waiting-time information, and service statistics. Local database files are intentionally excluded from Git using `.gitignore`.
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Divakar10-ai/Smart-Campus-Queue-Management.git
+
