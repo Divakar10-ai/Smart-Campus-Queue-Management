@@ -1,66 +1,103 @@
 # Smart Campus Queue Management System
 
-A Streamlit-based digital queue management system designed to reduce waiting time at campus service counters such as fees, library, stationery, and administrative offices.
+> A digital queue management platform designed to reduce waiting time at campus service counters through token-based queue tracking, estimated waiting time, administration tools, and analytics.
 
-## Features
+---
 
-- Student portal for joining and tracking queues
-- Digital token generation
-- Queue position and estimated waiting time
-- Admin dashboard for managing active queues
-- Digital display for current and upcoming tokens
-- Analytics and reporting
-- Data export utilities
-- SQLite database for local persistence
-- Modular Python project structure
+## Overview
 
-## Tech Stack
+The **Smart Campus Queue Management System** is a Python and Streamlit-based application that digitizes traditional campus queues.
 
-- Python
-- Streamlit
-- SQLite
-- Pandas
-- Plotly / chart utilities
-- QR generation utilities
+Students can join a queue, receive a digital token, monitor their queue position, and view an estimated waiting time instead of standing in a physical queue.
 
-## Project Structure
+Administrators can manage queues, call the next student, complete services, monitor counters, and analyze queue activity.
+
+---
+
+## Key Features
+
+### Student Portal
+
+- Student registration and login
+- Select campus service
+- Generate digital queue token
+- View current token
+- Track queue position
+- Estimated waiting time
+- Queue status updates
+
+### Admin Dashboard
+
+- Secure administrator login
+- View active queues
+- Call next student
+- Manage queue status
+- Complete service requests
+- Monitor counters
+- View queue statistics
+
+### Digital Display
+
+- Current token display
+- Next tokens in queue
+- Live queue information
+- Designed for display on a campus screen
+
+### Analytics
+
+- Queue statistics
+- Service-wise analysis
+- Waiting-time analysis
+- Visual data representation
+- Historical queue information
+
+### Reports
+
+- Generate queue reports
+- Export data
+- Analyze service performance
+- Review queue activity
+
+---
+
+## Why This Project?
+
+Traditional campus counters often create long physical queues.
+
+Students may spend unnecessary time waiting for:
+
+- Fees
+- Library
+- Stationery
+- Administrative services
+- Other campus facilities
+
+This project converts the physical queue into a **digital queue**, allowing students to spend their waiting time elsewhere while monitoring their position through the application.
+
+---
+
+## System Workflow
 
 ```text
-Smart-Campus-Queue-Management/
-├── app.py
-├── auth.py
-├── database.py
-├── config.py
-├── components/
-├── modules/
-├── utils/
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
-## Run Locally
-
-```bash
-python -m venv venv
-```
-
-Windows PowerShell:
-
-```powershell
-.env\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m streamlit run app.py
-```
-
-## Security Note
-
-Local database files and credentials should not be committed to a public repository. This repository is configured to ignore SQLite database files and environment files.
-
-For a production deployment, configure authentication credentials through environment variables or a secure secrets manager.
-
-## Author
-
-**Divakar**
-
-Built as a Smart Campus / Data Analytics project.
+Student
+   |
+   v
+Login / Register
+   |
+   v
+Select Service
+   |
+   v
+Generate Token
+   |
+   v
+Join Digital Queue
+   |
+   v
+Track Queue Position
+   |
+   v
+Estimated Waiting Time
+   |
+   v
+Service Completed
